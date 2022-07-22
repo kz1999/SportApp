@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://unpkg.com/maplibre-gl@2.1.9/dist/maplibre-gl.js'></script>
+    <link href='https://unpkg.com/maplibre-gl@2.1.9/dist/maplibre-gl.css' rel='stylesheet' />
+    <link href='styles/home.css' rel='stylesheet' />
+    <title>SportShare</title>
+</head>
+<body>
+    <div class="title">
+        <div id="title-name">SportShare</div>
+        <div id="user-icon">User</div>
+    </div>
+    <div class="home-container">
+        <div class="map-container">
+            <div id='map' style='width: 1000px; height: 530px;'></div>
+            <div class="add-container">
+                <div class="add"><a href="./AddGathering.html">Add a gathering</a></div>
+            <div class="add"><a href="./AddLocation.html">Add a location</a></div>
+            </div>
+        </div>
+        <div class="active-container">
+        </div>
+        <script>
+            var map = new maplibregl.Map({
+            container: 'map',
+            style: 'https://demotiles.maplibre.org/style.json', // stylesheet location
+            center: [16, 45], // starting position [lng, lat]
+            zoom: 9 // starting zoom
+            });
+        </script>
+    </div>
+</body>
+</html>

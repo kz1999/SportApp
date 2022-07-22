@@ -4,21 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/register.css" rel="stylesheet" />
     <title>SportShare</title>
 </head>
 <body>
-    <div>
+    <div class="title">
         <p>SportShare</p>
     </div>
-    <div>
+    <div class="login-form">
         <form>
-            <label for="id">Username</label>
+            <div class="form-row">
+                <label for="id">Username</label>
             <input type="text" id="id" name="username">
-            <label for="pass">Input your password</label>
-            <input type="password" id="pass" name="password">
-            <label for="pass">Repeat the password</label>
-            <input type="password" id="pass" name="password">
-            <input type="submit" value="submit">
+            </div>
+            <div class="form-row">
+                <label for="pass">Input your password</label>
+                <input type="password" id="pass" name="password">
+            </div>
+            <div class="form-row">
+                <label for="pass">Repeat the password</label>
+                <input type="password" id="pass" name="password">
+            </div>
+            <input type="submit" value="submit" id="submit">
         </form>
     </div>
 </body>

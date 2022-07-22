@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles/login.css" rel="stylesheet"/>
+    <link href="styles/register.css" rel="stylesheet" />
     <title>SportShare</title>
 </head>
 <body>
@@ -14,12 +14,16 @@
     <div class="login-form">
         <form>
             <div class="form-row">
-                <label for="id">Username</label>
+                <label for="id">Location name</label>
             <input type="text" id="id" name="username">
             </div>
             <div class="form-row">
-                <label for="pass">Password</label>
-            <input type="password" id="pass" name="password">
+                <label for="lat">Latitude</label>
+                <input type="text" id="lat" name="latititude">
+            </div>
+            <div class="form-row">
+                <label for="lon">Longitude</label>
+                <input type="text" id="lon" name="longitude">
             </div>
             <input type="submit" value="submit" id="submit">
         </form>
